@@ -31,3 +31,9 @@ $(document).ready(function() {
     });
   });
 });
+
+htmlDate = function() {
+    var date = new Date();
+    var html = "<p>" + date.getDate() + "</p>" + "<span> Monday </span>";
+    return html;
+  };

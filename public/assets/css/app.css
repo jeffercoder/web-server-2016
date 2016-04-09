@@ -1,14 +1,94 @@
+
+footer {
+    margin-left: 0px;
+align-content: center;
+padding: 67px 0;
+
+background-color: #f1634f;
+
+}
+
+footer h1 {
+  color: white;
+  background-color: black;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 100px;
+  margin: 0 0 40px 0;
+}
+
+footer li> a {
+    margin: 10px;
+    color: white;
+    background-color: rgb(5, 10, 18);
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+footer ul {
+  width: 100%;
+      text-align: center;
+      margin: 0 15px;
+      list-style: none;
+  }
+
+footer ul > li {
+  display: inline;
+  margin: 5px;
+}
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+
+ .navbar-default {
+   background-color: #f8f8f8;
+   border-color: #e7e7e7;
+   height: 100px;
+   height: 137px;
+   margin: 0;
+}
+ .navbar-header-middle  {
+  text-align: center;
+    width: 1094px;
+    height: 90px;
+    align-content: center;
+    margin: 10px 120px 0px 120px;
+    color: white;
+    background-color: rgb(5, 10, 18);
+    font-weight: 600;
+    font-size: 20px;
+}
+
 .navbar-brand {
-  padding: 10px;
+    padding: 10px;
 }
 
 .navbar-brand > img {
-  width: 120px;
-  height: 30px;
+  width: 180px;
+  height: 121px;
 }
 
+.navbar-default {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+    height: 100px;
+    height: 57px;
+    margin: 0;
+}
 .cat {
   width: 400px;
   height: 300px;
   position: relative;
+}
+
+img {
+    vertical-align: middle;
+    height: 168px;
+    width: 250px;
 }
