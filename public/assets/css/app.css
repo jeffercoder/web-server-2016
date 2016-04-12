@@ -44,25 +44,28 @@ footer ul > li {
 }
 
 
+.navbar-default {
+  background-color: #666;
+  background-image: none;
+  border: none;
+  border-radius: 0;
+    height: 100px;
+    height: 57px;
+    margin: 0;
+}
 
-
- .navbar-default {
-   background-color: #f8f8f8;
-   border-color: #e7e7e7;
-   height: 100px;
-   height: 137px;
-   margin: 0;
+.navbar-default .navbar-nav > li > a {
+  color: white;
 }
  .navbar-header-middle  {
-  text-align: center;
-    width: 1094px;
-    height: 90px;
-    align-content: center;
-    margin: 10px 120px 0px 120px;
-    color: white;
-    background-color: rgb(5, 10, 18);
-    font-weight: 600;
-    font-size: 20px;
+   text-align: center;
+   width: 100%;
+   padding: 30px 0;
+   align-content: center;
+   color: white;
+   background-color: brown;
+   font-weight: 600;
+   font-size: 20px;
 }
 
 .navbar-brand {
@@ -74,13 +77,7 @@ footer ul > li {
   height: 121px;
 }
 
-.navbar-default {
-    background-color: #f8f8f8;
-    border-color: #e7e7e7;
-    height: 100px;
-    height: 57px;
-    margin: 0;
-}
+
 .cat {
   width: 400px;
   height: 300px;
@@ -91,4 +88,17 @@ img {
     vertical-align: middle;
     height: 168px;
     width: 250px;
+}
+
+#fecha {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  width: 50%;
+  height: calc(100vh - 206px);
+  align-items: center;
+text-align: center;
 }

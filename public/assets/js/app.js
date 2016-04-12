@@ -1,4 +1,9 @@
 $(document).ready(function() {
+  var today = new Date();
+
+  today = today.getDate() + "  "  + today.getMonth() + " " + today.getUTCFullYear();
+
+  $('#fecha').text(today);
   // Init
   $.get('home.html', function(data) {
     $('.container').html(data);
