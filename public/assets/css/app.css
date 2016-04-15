@@ -100,5 +100,30 @@ img {
   width: 50%;
   height: calc(100vh - 206px);
   align-items: center;
-text-align: center;
+  text-align: center;
+}
+
+.container about-me > col-xs-12 {
+         background-color: #170b8c;
+}
+#about-me {
+   background-color: burlywood;
+   padding: 60px 0;
+
+}
+
+#rest-log {
+  background-color: #676C9E;
+  padding: 60px 0;
+}
+#results {
+  background-color: #47A55E;
+  padding: 60px 0;
+}
+#top {
+  background-color: #898A2E;
+  padding: 60px 0;
+}
+#images {
+  padding: 60px 0;
 }

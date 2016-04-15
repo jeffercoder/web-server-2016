@@ -3,9 +3,11 @@ $(document).ready(function() {
 
 //  today = today.getDate() + "  "  + today.getMonth() + " " + today.getUTCFullYear();
 var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+var mths = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 var mth = today.getMonth() + 1;
+var mthName = mths[(mth-1)];
 var word = days[today.getDay()];
-today = word + " " + mth + " " + today.getDate() +  " " + today.getUTCFullYear();
+today = word + " " + mthName + " " + today.getDate() +  " " + today.getUTCFullYear();
 
 
   $('#fecha').text(today);
