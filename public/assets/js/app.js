@@ -11,6 +11,16 @@ today = word + " " + mthName + " " + today.getDate() +  " " + today.getUTCFullYe
 
 
   $('#fecha').text(today);
+  $('#fecha-input').datepicker();
+// ToolTips Added 04/16/2016
+ $( '.tip-amount' ).tooltip();
+$( '.tip-percentage' ).tooltip();
+// Input Added 04/16/2016
+ 
+
+
+
+
   // Init
   $.get('home.html', function(data) {
     $('.container').html(data);

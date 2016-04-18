@@ -127,3 +127,11 @@ img {
 #images {
   padding: 60px 0;
 }
+.tip-amount {
+    display: inline-block;
+    width: 30px;
+  }
+  .tip-percentage {
+      display: inline-block;
+      width: 30px;
+    }
