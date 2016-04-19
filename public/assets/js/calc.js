@@ -53,8 +53,8 @@ restart = function() {
     $(selector).val('');
   }
 
-  $('body').animate({scrollTop : 0}, 1000);
-}
+// $('body').animate({scrollTop : 0}, 1000);
+ }
 
 // $('button.restart').on('click', function() {
 //
