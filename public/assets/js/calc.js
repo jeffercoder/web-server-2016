@@ -46,7 +46,8 @@ allTips = function() {
 
 restart = function() {
   $('input.custom-tip').val('');
-
+  $('input.amount').val('');
+  $('input.pTip').val('');
   for (var i = 0; i < staticTips.length; i++) {
     var selector = 'input.static-tip' + staticTips[i];
     $(selector).val('');
