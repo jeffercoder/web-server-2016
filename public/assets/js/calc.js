@@ -7,20 +7,30 @@ pTip = 0;
 staticTips = [8, 10, 15, 18, 20, 25];
 
 calculate = function(amount, pTip) {
-  return amount * (pTip / 100);
+  var result = amount * (pTip / 100);
+  result = result.toFixed(2);
+  return result;
 };
 
-$('input.amount').on('change', function() {
-  amount = $(this).val();
-});
-console.log(amount + "this is the amount");
-
-$('input.pTip').on('change', function() {
-  pTip = $(this).val();
-});
-console.log(pTip + "this is the tip percentage");
-
-$('button.calculate').on('click', function() {
+// $('input.amount').on('change', function() {
+//   amount = $(this).val();
+//   console.log(amount + "this is the amount");
+// });
+//
+// $('input.pTip').on('change', function() {
+//   pTip = $(this).val();
+//   console.log(pTip + "this is the tip percentage");
+// });
+allTips = function() {
+  amount = $('input.amount').val();
+  amount = parseFloat(amount).toFixed(2);
+  pTip = $('input.pTip').val();
+  console.log(amount, pTip);
+  pTip = parseFloat(pTip).toFixed(2);
+  if(amount < 0 || pTip < 0) {
+    alert('cant input negative numbers');
+    return false;
+  }
   $('input.custom-tip').val(calculate(amount, pTip));
 
   for (var i = 0; i < staticTips.length; i++) {
@@ -29,9 +39,12 @@ $('button.calculate').on('click', function() {
     // eg. input.static-tip10
     $(selector).val(calculate(amount, staticTips[i]));
   }
-});
+}
+// $('button.calculate').on('click', function() {
+//
+// });
 
-$('button.restart').on('click', function() {
+restart = function() {
   $('input.custom-tip').val('');
 
   for (var i = 0; i < staticTips.length; i++) {
@@ -40,4 +53,8 @@ $('button.restart').on('click', function() {
   }
 
   $('body').animate({scrollTop : 0}, 1000);
-});
+}
+
+// $('button.restart').on('click', function() {
+//
+// });

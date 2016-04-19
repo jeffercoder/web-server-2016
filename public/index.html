@@ -14,6 +14,7 @@
   <script type="text/javascript" src="assets/js/jquery-ui.js"></script>
   <script type="text/javascript" src="assets/js/bootstrap.js"></script>
   <script type="text/javascript" src="assets/js/app.js"></script>
+  <script type="text/javascript" src="assets/js/accounting.js"></script>
   <script type="text/javascript" src="assets/js/calc.js"></script>
 
 </head>
@@ -167,11 +168,12 @@
       -->
      <div class="input-group">
       <span class="input-group-addon">$</span>
-      <input type="text" class="form-control amount" aria-label="Amount (to the nearest dollar)" title="Enter Amount"> <!-- test of ToolTip -->
-<!--     <span class="input-group-addon">.00</span> -->
+      <input type="number" min="0" step="0.01" data-number-to-fixed="2" class="form-control amount" aria-label="Amount (to the nearest dollar)" title="Enter Amount"> <!-- test of ToolTip -->
+       <span class="input-group-addon">Tab</span>
      <div class="btn-group btn-group-sm" role="group" aria-label="...">
+
 <!--      <div class="btn-group btn-group-sm" role="group" aria-label="...">...</div>  -->
-       <button type="button" class="btn btn-default">amount</button>
+<!--       <button type="button" class="btn btn-default">amount</button> -->
       </div>
      </div>
 
@@ -188,14 +190,15 @@
     -->
     <div class="input-group">
        <span class="input-group-addon">%</span>
-       <input type="text" class="form-control pTip" aria-label="Amount (to the nearest dollar)" title="Enter % Tip">
-  <!--     <span class="input-group-addon">.00</span> -->
+       <input type="number" min="1" step="1.00" data-number-to-fixed="2" class="form-control pTip" aria-label="Amount (to the nearest dollar)" title="Enter % Tip">
+       <span class="input-group-addon">Tab</span>
 
       <div class="btn-group" role="group" aria-label="...">
-         <button type="button" class="btn btn-default">%Tip</button>
+  <!--    <button type="button" class="btn btn-default">Tab</button> -->
       </div>
    </div>
-   <button type="submit" class="btn btn-primary calculate">Calculate Tip</button><br>
+   <br>
+   <button type="submit" class="btn btn-primary calculate" onclick="allTips()">Calculate Tip</button><br>
            <a href="#">Top</a><a href="#bottom"> Bottom</a>
          </div>
      </div>
@@ -222,7 +225,7 @@
 
                 <div class="form-group">
           <label for="exampleInputEmail1">xx% Tip Equals =</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="$">
+          <input type="email" class="form-control custom-tip" id="exampleInputEmail1" placeholder="$">
                </div>
           </div>
       </div>
@@ -237,7 +240,7 @@
 
             <div class="form-group">
       <label for="exampleInputEmail1">8% Tip Equals =</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="$">
+      <input type="email" class="form-control static-tip8 static-tip" id="exampleInputEmail1" placeholder="$">
            </div>
       </div>
   </div>
@@ -253,7 +256,7 @@
 
             <div class="form-group">
                 <label for="exampleInputEmail1">10% Tip Equals =</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="$">
+                <input type="email" class="form-control static-tip10" id="exampleInputEmail1" placeholder="$">
            </div>
        </div>
     </div>
@@ -270,7 +273,7 @@
 
             <div class="form-group">
                 <label for="exampleInputEmail1">15% Tip Equals =</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="$">
+                <input type="email" class="form-control static-tip15" id="exampleInputEmail1" placeholder="$">
             </div>
         </div>
       </div>
@@ -287,7 +290,7 @@
 
           <div class="form-group">
               <label for="exampleInputEmail1">18% Tip Equals =</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="$">
+              <input type="email" class="form-control static-tip18" id="exampleInputEmail1" placeholder="$">
           </div>
 
         </div>
@@ -304,7 +307,7 @@
 
                 <div class="form-group">
           <label for="exampleInputEmail1">20% Tip Equals =</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="$">
+          <input type="email" class="form-control static-tip20" id="exampleInputEmail1" placeholder="$">
                </div>
           </div>
       </div>
@@ -320,9 +323,9 @@
 
                 <div class="form-group">
           <label for="exampleInputEmail1">25% Tip Equals =</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="$">
+          <input type="email" class="form-control static-tip25" id="exampleInputEmail1" placeholder="$">
                </div>
-               <button type="submit" class="btn btn-primary restart">Restart</button>
+               <button type="submit" class="btn btn-primary restart" onclick="restart()">Restart</button>
                <a href="#top">TOP</a>
           </div>
       </div>
@@ -399,6 +402,7 @@
         <img alt="Brand" src="assets\images\restaurantambiente.jpg">
         Ambience
       </div>
+      <br><br><a href="#top">Top</a><a href="#bottom"> Bottom</a>
     </div>
   </div>
 </section>
@@ -449,6 +453,7 @@
               <li><a href="#">Contact</a></li>
               <li><a href="#">Home</a></li>
               <li><a href="#Amount">Tip</a></li>
+              <li><a href="#rest-log">Log</a></li>
             </ul>
           </div>
           </div>
