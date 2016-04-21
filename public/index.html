@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>My Final</title>
   <link rel="stylesheet" href="assets/css/jquery-ui.css">
   <link rel="stylesheet" href="assets/css/jquery-ui.structure.css">
@@ -53,7 +54,7 @@
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#" id="home">Home</a></li>
           <li><a href="#top" id="home">Tip Calculation</a></li>
-          <li><a href="#rest-log" id="home">Restaurant Log</a></li>
+          <li><a id="rest-link" class="page-scroll" href="#rest-log" >Restaurant Log</a></li>
           <li><a href="#about-me">About</a></li>
           <li><a href="#bottom">Bottom</a></li>
         </ul>
@@ -198,8 +199,8 @@
       </div>
    </div>
    <br>
-   <button type="submit" class="btn btn-primary calculate" onclick="allTips()">Calculate Tip</button><br>
-           <a href="#">Top</a><a href="#bottom"> Bottom</a>
+   <button type="submit" class="btn btn-primary calculate" onclick="allTips()">Calculate Tip</button><br><strong>
+           <a href="#">HOME</a><a href="#bottom"> Bottom</a></strong>
 
          </div>
      </div>
@@ -250,8 +251,8 @@
            <p><strong>
             Tip 10% of Amount:
            <br></p>
-           <a href="#top">Top</a><a href="#bottom"> Bottom</a></strong>
-           </strong>
+           <a href="#bottom">Bottom</a><a href="#Amount"> Redo</a></strong>
+
         </div>
         <div class="col-xs-12 col-md-4">
 
@@ -266,8 +267,8 @@
            <p><strong>
             Tip 15% of Amount:
            <br></p>
-           <a href="#top">Top</a><a href="#bottom"> Bottom</a></strong>
-           </strong>
+           <a href="#bottom">Bottom</a><a href="#Amount"> Redo</a></strong>
+
         </div>
 
         <div class="col-xs-12 col-md-4">
@@ -283,8 +284,8 @@
           <p><strong>
            Tip 18% of Amount:
            </p>
-           <a href="#top">Top</a><a href="#bottom"> Bottom</a>
-           </strong>
+           <a href="#bottom">Bottom</a><a href="#Amount"> Redo</a></strong>
+
          </div>
 
         <div class="col-xs-12 col-md-4">
@@ -301,8 +302,8 @@
                    <p><strong>
                     Tip 20% of Amount:
                    </p>
-                   <a href="#top">Top</a><a href="#bottom"> Bottom</a></strong>
-                   </strong>
+                   <a href="#bottom">Bottom</a><a href="#Amount"> Redo</a></strong>
+
           </div>
           <div class="col-xs-12 col-md-4">
 
@@ -317,8 +318,8 @@
                    <p><strong>
                     Tip 25% of Amount:
                    </p>
-                   <a href="#top">Restart</a><a href="#bottom"> Bottom</a></strong>
-                   </strong>
+                   <a href="#bottom">Bottom</a><a href="#Amount"> Redo</a></strong>
+
           </div>
           <div class="col-xs-12 col-md-4">
 
@@ -326,8 +327,8 @@
           <label for="exampleInputEmail1">25% Tip Equals =</label>
           <input type="email" class="form-control static-tip25" id="exampleInputEmail1" placeholder="$">
                </div>
-               <button type="submit" class="btn btn-primary restart" onclick="restart()">Clear</button><br>
-               <a href="#Amount">Restart Tip</a>
+               <button type="submit" class="btn btn-primary restart" onclick="restart()">Clear</button><br><strong>
+               <a href="#Amount">Restart Tip</a></strong>
           </div>
 
       </div>
@@ -380,8 +381,8 @@
     <input type="text" class="form-control" id="exampleInputEmail2" placeholder="1-10 Excellent">
   </div>
   <button type="submit" class="btn btn-default">Enter log</button>
-</form><br>
-<a href="#">Top</a><a href="#bottom"> Bottom</a>
+</form><br><strong>
+<a href="#top">TIPCalc</a><a href="#bottom"> Bottom</a></strong>
 </div>
 <!-- End Test 04152016 -->
 </section>
@@ -403,8 +404,8 @@
       <div class="col-md-3 col-xs-12">
         <img alt="Brand" src="assets\images\restaurantambiente.jpg">
         Ambience
-      </div>
-      <br><br><a href="#top">Top</a><a href="#bottom"> Bottom</a>
+      </div><strong>
+      <br><br><a href="#">HOME</a><a href="#bottom"> Bottom</a></strong>
     </div>
   </div>
 </section>
@@ -424,8 +425,8 @@
           <p><strong>Tips</strong>
             <p> TIP calculated based upon the amount and percentage entered plus the fixed % calculations from 8 to 25%.<br><br>
             Este website computa la propina basada en la cantidad y el porcentaje entrada.  Tambien hay porcentajes fijas desde 8 hasta 25 %.
-            </p>
-            <a href="#top">TOP</a>
+          </p><strong>
+            <a href="#top">TIPCalc</a></strong>
         </div>
         <div class="col-md-4 col-xs-12">
           <img src="assets\images\finedining.jpg" alt="" width="200px">
@@ -434,8 +435,8 @@
                 It also allows user to enter the name and location of restaurant and rate their experience by Food Quality, Service, Presentation and Ambience.
                <br><br>
                Hay opcion para entrar su opinion del restuarante por calidad de comida, servicio, presentacion y ambiente.
-            </P>
-           <a href="#top">Top</a><a href="#bottom"> Bottom</a>
+            </P><strong>
+           <a href="#">HOME</a><a href="#bottom"> Bottom</a></strong>
         </div>
       </div>
     </div>

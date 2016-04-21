@@ -39,6 +39,11 @@ allTips = function() {
     // eg. input.static-tip10
     $(selector).val(calculate(amount, staticTips[i]));
   }
+// Jump to results after calculate
+$('html, body').animate({
+  scrollTop: ($('#results').offset().top - 0)
+ }, 1000);
+ return false;
 }
 // $('button.calculate').on('click', function() {
 //
@@ -52,7 +57,11 @@ restart = function() {
     var selector = 'input.static-tip' + staticTips[i];
     $(selector).val('');
   }
-
+  // to jump back to top after clear
+  $('html, body').animate({
+    scrollTop: ($('#top').offset().top - 0)
+  }, 1000);
+  return false;
 // $('body').animate({scrollTop : 0}, 1000);
  }
 

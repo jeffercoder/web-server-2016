@@ -16,7 +16,7 @@ today = word + " " + mthName + " " + today.getDate() +  " " + today.getUTCFullYe
  $( '.tip-amount' ).tooltip();
 $( '.tip-percentage' ).tooltip();
 // Input Added 04/16/2016
- 
+
 
 
 
@@ -38,6 +38,14 @@ $( '.tip-percentage' ).tooltip();
       $('.container').html(data);
     });
   });
+  //
+  $('#rest-link').on('click', function(e) {
+     e.preventDefault();
+     $('html, body').animate({
+       scrollTop: ($('#rest-log').offset().top - 0)
+     }, 1000);
+     return false;
+   });
 
   // Events that need to be listened upon change
   $('.container').on('click', '.animate', function() {
