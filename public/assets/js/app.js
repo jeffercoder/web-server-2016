@@ -38,7 +38,7 @@ $( '.tip-percentage' ).tooltip();
       $('.container').html(data);
     });
   });
-  //
+  // bootstrap - scroll to id= xxx-link and class= page-scroll
   $('#rest-link').on('click', function(e) {
      e.preventDefault();
      $('html, body').animate({
@@ -46,6 +46,27 @@ $( '.tip-percentage' ).tooltip();
      }, 1000);
      return false;
    });
+   $('#rest2-link').on('click', function(e) {
+      e.preventDefault();
+      $('html, body').animate({
+        scrollTop: ($('#rest-log').offset().top - 0)
+      }, 1000);
+      return false;
+    });
+   $('#about-link').on('click', function(e) {
+      e.preventDefault();
+      $('html, body').animate({
+        scrollTop: ($('#about-me').offset().top - 0)
+      }, 1000);
+      return false;
+    });
+    $('#top-link').on('click', function(e) {
+       e.preventDefault();
+       $('html, body').animate({
+         scrollTop: ($('#top').offset().top - 0)
+       }, 1000);
+       return false;
+     });
 
   // Events that need to be listened upon change
   $('.container').on('click', '.animate', function() {
