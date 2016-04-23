@@ -22,9 +22,9 @@ $( '.tip-percentage' ).tooltip();
 
 
   // Init
-  $.get('home.html', function(data) {
-    $('.container').html(data);
-  });
+  // $.get('home.html', function(data) {
+  //   $('.container').html(data);
+  // });
 
   // Links
   $('#home').on('click', function() {
