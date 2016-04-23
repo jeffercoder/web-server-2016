@@ -53,6 +53,7 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#" id="home">Home</a></li>
+          <li><a id="contact-link" class="page-scroll" href="#contact-us" >Contact Us</a></li>
             <li><a id="top-link" class="page-scroll" href="#top" >Tip Calculation</a></li>
   <!--        <li><a href="#top" id="home">Tip Calculation</a></li> -->
           <li><a id="rest-link" class="page-scroll" href="#rest-log" >Restaurant Log</a></li>
@@ -220,17 +221,16 @@
       <div class="row">
           <div class="col-xs-12 col-md-4">
                    <p><strong>
-                    Tip xx% of Amount:
+                    Tip <span id="percent">xx</span>% of Amount:
                    <br></p>
                    <a href="#bottom">Bottom</a><a href="#Amount"> Redo</a></strong>
                    </strong>
           </div>
           <div class="col-xs-12 col-md-4">
-
-                <div class="form-group">
-          <label for="exampleInputEmail1">xx% Tip Equals =</label>
-          <input type="email" class="form-control custom-tip" id="exampleInputEmail1" placeholder="$">
-               </div>
+               <div class="form-group">
+                <label for="exampleInputEmail1">Input % Tip Equals =</label>
+                <input type="email" class="form-control custom-tip" id="exampleInputEmail1" placeholder="$">
+              </div>
           </div>
       </div>
   <div class="row">
@@ -411,6 +411,48 @@
     </div>
   </div>
 </section>
+<section id="contact-us">
+  <div class="container about-me">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1><strong>Contact Us Please</strong></h1>
+      </div>
+    </div>
+  <div class="row">
+    <div class="col-md-4 col-xs-12">
+      <img src="assets\images\customerservice.jpg" alt="" width="200px">
+      <p><strong>Contact Us</strong>
+        <p>  Please fill out your Name, Email Address and the message you wish to let us know: complaints, advise, comments<br><br>
+        Por favor, llena los cajas segun se pide: nombre, su Email y su Mensaje: cajas, consejos, comentarios.
+      </p><strong>
+        <a href="#">HOME</a> / <a href="#bottom"> Bottom</a></strong>
+    </div>
+
+    <form action="https://formspree.io/jmg1975pr@gmail.com"
+       method="POST">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" />
+    </div>
+    <div>
+        <label for="mail">E-mail:</label>
+        <input type="email" name="_replyto">
+    </div>
+    <div>
+        <label for="msg">Message:</label>
+        <textarea id="msg" name="message"></textarea>
+  <!--      <input type="message" name="message"> -->
+    </div>
+    <div class="button">
+      <input type="submit" value="Send">
+        <!-- <button type="submit">Send your message</button> -->
+    </div>
+ </form>
+</div>
+</section>
+
+
+
 
   <section id="about-me">
     <div class="container about-me">
@@ -454,10 +496,11 @@
               <li><a href="#">Food Quality</a></li>
               <li><a href="#">Customer service</a></li>
               <li><a href="#">Food Presentation</a></li>
-              <li><a href="#">Ambiente</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#">Ambience</a></li>
               <li><a href="#">Home</a></li>
-              <li><a href="#Amount">Tip</a></li>
+              <li><a id="contact2-link" class="page-scroll" href="#contact-us">Contact</a></li>
+              <li><a id="top2-link" class="page-scroll" href="#top" >Tip Calculation</a></li>
+        <!--      <li><a href="#top">Tip</a></li> -->
               <li><a id="rest2-link" class="page-scroll" href="#rest-log" >Restaurant Log</a></li>
       <!--        <li><a href="#rest-log">Log</a></li> -->
             </ul>

@@ -60,6 +60,20 @@ $( '.tip-percentage' ).tooltip();
       }, 1000);
       return false;
     });
+    $('#contact-link').on('click', function(e) {
+       e.preventDefault();
+       $('html, body').animate({
+         scrollTop: ($('#contact-us').offset().top - 0)
+       }, 1000);
+       return false;
+     });
+     $('#contact2-link').on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({
+          scrollTop: ($('#contact-us').offset().top - 0)
+        }, 1000);
+        return false;
+      });
     $('#top-link').on('click', function(e) {
        e.preventDefault();
        $('html, body').animate({
@@ -67,7 +81,13 @@ $( '.tip-percentage' ).tooltip();
        }, 1000);
        return false;
      });
-
+     $('#top2-link').on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({
+          scrollTop: ($('#top').offset().top - 0)
+        }, 1000);
+        return false;
+      });
   // Events that need to be listened upon change
   $('.container').on('click', '.animate', function() {
     $('img').animate({

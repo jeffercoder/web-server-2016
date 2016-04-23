@@ -111,10 +111,14 @@ img {
    padding: 60px 0;
 
 }
+#contact-us {
+   background-color: #D87514;
+   padding: 60px 0 180px 0;
 
+}
 #rest-log {
   background-color: #676C9E;
-  padding: 60px 0;
+  padding: 60px 0 60px 0;
 }
 #results {
   background-color: #47A55E;

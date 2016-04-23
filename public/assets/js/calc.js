@@ -25,10 +25,15 @@ allTips = function() {
   amount = $('input.amount').val();
   amount = parseFloat(amount).toFixed(2);
   pTip = $('input.pTip').val();
+  $('#percent').text(pTip);
   console.log(amount, pTip);
   pTip = parseFloat(pTip).toFixed(2);
   if(amount < 0 || pTip < 0) {
-    alert('cant input negative numbers');
+    alert('cant input negative numbers or zero');
+    return false;
+  }
+  if(amount == 'NaN' || pTip == 'NaN') {
+    alert('cant input blanks');
     return false;
   }
   $('input.custom-tip').val(calculate(amount, pTip));
