@@ -17,6 +17,8 @@
   <script type="text/javascript" src="assets/js/app.js"></script>
   <script type="text/javascript" src="assets/js/accounting.js"></script>
   <script type="text/javascript" src="assets/js/calc.js"></script>
+  <script type="text/javascript" src="assets/js/contact.js"></script>
+  <script type="text/javascript" src="assets/js/localstore.js"></script>
 
 </head>
 <body>
@@ -432,22 +434,29 @@
        method="POST">
     <div>
         <label for="name">Name:</label>
-        <input type="text" id="name" />
+        <input type="text" id="name" name="Name"/>
     </div>
     <div>
         <label for="mail">E-mail:</label>
-        <input type="email" name="_replyto">
+        <input type="email" id="replyto" name="replyto">
     </div>
     <div>
         <label for="msg">Message:</label>
         <textarea id="msg" name="message"></textarea>
+        <strong><p> Expand box lower right hand corner ^</p></strong>
   <!--      <input type="message" name="message"> -->
     </div>
     <div class="button">
       <input type="submit" value="Send">
         <!-- <button type="submit">Send your message</button> -->
     </div>
- </form>
+
+  </form>
+  <!-- test of clear contact info button 04232016
+  <div class="clear-contact">
+    <button type="submit" class="btn btn-primary restart"   onclick="clearContact()">Clear</button><br><strong>
+  </div>
+    <!-- test of clear contact info button 04232016  -->
 </div>
 </section>
 

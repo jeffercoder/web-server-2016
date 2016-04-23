@@ -22,6 +22,8 @@ else {
 	// Too bad, no localStorage for us
   console.log("Too Bad");
 }
+// test 04232016 next line - submit
+submit = function() {
 if(!localStorage.getItem('name')) {
   // populateStorage();
 	function populateStorage() {
@@ -50,9 +52,11 @@ if(!localStorage.getItem('name')) {
   document.getElementById('image').value = currentImage;
   console.log(getElementById('naMe'));
 
-  htmlElem.style.backgroundColor = '#' + currentColor;
-  pElem.style.fontFamily = currentFont;
-  imgElem.setAttribute('src', currentImage);
+  //htmlElem.style.backgroundColor = '#' + currentColor;
+  //pElem.style.fontFamily = currentFont;
+  //imgElem.setAttribute('src', currentImage);
 }
 
 }
+}
+console.log()
