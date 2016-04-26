@@ -46,7 +46,7 @@ $( '.tip-percentage' ).tooltip();
      }, 1000);
      return false;
    });
-   $('#rest2-link').on('click', function(e) {
+   $('#rest-footer-link').on('click', function(e) {
       e.preventDefault();
       $('html, body').animate({
         scrollTop: ($('#rest-log').offset().top - 0)
@@ -67,7 +67,7 @@ $( '.tip-percentage' ).tooltip();
        }, 1000);
        return false;
      });
-     $('#contact2-link').on('click', function(e) {
+     $('#contact-footer-link').on('click', function(e) {
         e.preventDefault();
         $('html, body').animate({
           scrollTop: ($('#contact-us').offset().top - 0)

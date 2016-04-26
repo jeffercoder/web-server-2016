@@ -22,9 +22,12 @@ else {
 	// Too bad, no localStorage for us
   console.log("Too Bad");
 }
+var naMe = localStorage.getItem('naMe');
+console.log(naMe);
+
 // test 04232016 next line - submit
-submit = function() {
-if(!localStorage.getItem('name')) {
+submitlog = function() {
+if(!localStorage.getItem('naMe')) {
   // populateStorage();
 	function populateStorage() {
   localStorage.setItem('naMe', document.getElementById('naMe').value);
@@ -39,17 +42,22 @@ if(!localStorage.getItem('name')) {
 } else {
 	//  setStyles(); now print fields to screen
 	function setStyles() {
-  var currentnaMe = localStorage.getItem('naMe');
-  var currentFont = localStorage.getItem('cityState');
-  var currentImage = localStorage.getItem('daTe');
-	var currentImage = localStorage.getItem('foOd');
-  var currentImage = localStorage.getItem('serVice');
-  var currentImage = localStorage.getItem('preSent');
-	var currentImage = localStorage.getItem('amBience');
+  var naMe = localStorage.getItem('naMe');
+  var cityState = localStorage.getItem('cityState');
+  var daTe = localStorage.getItem('daTe');
+	var foOd = localStorage.getItem('foOd');
+  var serVice = localStorage.getItem('serVice');
+  var preSent = localStorage.getItem('preSent');
+	var amBience = localStorage.getItem('amBience');
 
-  document.getElementById('naMe').value = currentnaMe;
-  document.getElementById('font').value = currentFont;
-  document.getElementById('image').value = currentImage;
+  document.getElementById('naMe').value =  naMe;
+  document.getElementById('font').value = cityState;
+  document.getElementById('foOd').value = foOd;
+	document.getElementById('serVice').value =  serVice
+	document.getElementById('preSent').value = preSent;
+	document.getElementById('amBience').value = amBience;
+
+
   console.log(getElementById('naMe'));
 
   //htmlElem.style.backgroundColor = '#' + currentColor;
